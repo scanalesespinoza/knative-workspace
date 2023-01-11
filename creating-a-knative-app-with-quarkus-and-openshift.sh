@@ -4,7 +4,7 @@
 oc new-project quarkus-knative
 
 # Create a new Quarkus application
-mvn quarkus:create -DprojectGroupId=com.mycompany -DprojectArtifactId=myapp -DclassName="com.mycompany.myapp.MyResource" -Dpath="/myapp"
+mvn io.quarkus.platform:quarkus-maven-plugin:2.15.3.Final:create -DprojectGroupId=com.mycompany -DprojectArtifactId=myapp -DclassName="com.mycompany.myapp.MyResource" -Dpath="/myapp"
 
 # Build the Quarkus application
 cd myapp
